@@ -71,44 +71,19 @@ Please note that you'll need to configure your IDE to work with your Raspberry P
 
 For this project, a substantial amount of wiring is required. It is highly recommended to use breadboards and jumper cables for a clean and organized setup.
 
-### LCD Connections
 
-| Display Pin Number | Display Pin Name | Pi Pico Pins |
-|-------------------|------------------|--------------|
-| 2                 | VCC              | 5V (VBUS)        |
-| 1                 | GND              | GND          |
-| 10                | CS               | GP18         |
-| 6                 | RESET            | GP17         |
-| 7                 | A0               | GP16         |
-| 8                 | SDA              | GP11         |
-| 9                 | SCL              | GP10         |
-| 15                | LED +            | 3.3V         |
+### PICO CONNECTIONS
 
-### OV7670 Module Connections
-
-
-
-| OV7670 Pin Name | Pi Pico Pin Name                    |
-|-----------------|------------------------------------|
-| D0              | GP0                                |
-| D1              | GP1                                |
-| D2              | GP2                                |
-| D3              | GP3                                |
-| D4              | GP4                                |
-| D5              | GP5                                |
-| D6              | GP6                                |
-| D7              | GP7                                |
-| PCLK            | GP8                                |
-| MCLK            | GP9                                |
-| HS              | GP12                               |
-| VS              | GP13                               |
-| PDWN            | GP15                               |
-| RESET           | GP14                               |
-| SCL             | GP21 (via 4.7k external pull-up resistor) |
-| SDA             | GP20 (via 4.7k external pull-up resistor) |
-| 3.3V            | GP36                               |
-| GND             | GND                                |
-
+Pin	Name	Function
+0-27	GPIO0-27	General-purpose input/output
+28-30	ADC0-2	Analog inputs
+31-32	RX/TX (UART0)	Serial communication
+33-34	RX/TX (UART1)	Serial communication
+35-36	SPI0 SCLK/MISO	SPI bus 0
+37-38	SPI0 MOSI/CS	SPI bus 0
+39-40	I2C0 SCL/SDA	I2C bus 0
+41-42	I2C1 SCL/SDA	I2C bus 1
+USB	USB	Power and programming
 
 ## Wrapping It Up
 
