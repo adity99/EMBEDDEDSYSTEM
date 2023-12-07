@@ -19,7 +19,7 @@ In this project, we aim to develop a system that uses a Raspberry Pi Pico to run
 
 ## Project Inspiration
 
-This project drew inspiration from [Handwritten digit classification using Raspberry Pi Pico and Machine Learning](https://ashishware.com/2022/09/03/pipico_digit_classification/). While the core idea remains similar, several necessary changes and enhancements have been made to adapt it to our specific requirements and goals.
+This project can be used when the car revreses and approaches the wall behind so based on the sonic sensor it makes the necessary pulses.This can even be used in the construction site  to lift the materials based on the pulses.
 
 ## Required Hardware
 
