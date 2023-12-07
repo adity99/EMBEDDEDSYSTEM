@@ -11,7 +11,7 @@
   - [Raspberry Pi Pico Pin Diagram](#Raspberry-Pi-Pico-Pin-Diagram)
   - [Wiring](#wiring)
 
-# Creating a Handwritten Digit Classification System with Raspberry Pi Pico
+
 
 ## Project Overview
 
