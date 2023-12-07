@@ -15,7 +15,7 @@
 
 ## Project Overview
 
-In this project, we aim to develop a system that uses a Raspberry Pi Pico to run a machine learning model. This model will analyze images captured by an OV7670 camera module and predict the handwritten digit present in the image. The result will be displayed on a 128x160 TFT LCD screen. The entire process, from image capture to digit classification, will be self-contained on the Raspberry Pi Pico. [YouTube link](https://youtube.com/shorts/z9YVKxLYIeM?feature=share)
+In this project, we aim to develop a system that uses a Raspberry Pi Pico to run a servo 90 mm motor based on the values of the user given in an Blutooth HC-05 module It even detects the objects in front of it based on th egiven distances. [YouTube link](https://youtube.com/shorts/A1B2NVO9zRE?si=7lx_FeOTXM0ylfeC)
 
 ## Project Inspiration
 
@@ -25,39 +25,27 @@ This project drew inspiration from [Handwritten digit classification using Raspb
 
 1. **Raspberry Pi Pico**: This project is designed for the Raspberry Pi Pico, but it may work on other boards that support CircuitPython with some modifications. Ensure your board has sufficient GPIO pins, as almost 80% of the Pi Pico's GPIOs are used.
 
-2. **128x160 TFT LCD**: You'll need a compatible LCD display. Other displays may work with code adjustments, but an LCD is essential for practical alignment of handwritten digits with the camera's view.
+2. **servo 90 mm motor**: You'll need aservo 90 mm motor for the angle to rotate.
 
-3. **OV7670 Camera Module**: This camera module is used for capturing images. It's an affordable option for this project.
+3. **Bluetooth HC-05**: This blue tooth module takes the values from the mobile app 
 
 4. **Full-sized breadboard (highly recommended)**: A breadboard facilitates connections between components.
 
 5. **Jumper Cables**: You'll need male-to-female (M-F) and male-to-male (M-M) jumper cables for making various connections.
 
-6. **4.7k ohm resistor (2)**: These resistors are part of the project's electronic setup.
-
 ## Required Software
 
 1. **Any text editor**: You'll need a text editor for editing the code if necessary.
 
-2. **A full Python distribution and pip**: These are required for training and exporting the machine learning model.
-
 3. **Patience**: Building and fine-tuning this system may require some patience.
-
-The project aims to display the classification results on the 128x160 TFT LCD, making it a practical and interactive solution. It leverages CircuitPython for its versatility, ensuring compatibility with various boards supporting CircuitPython.
 
 ## Installation and Setup
 
-1. **Install CircuitPython on Your Board**: Start by installing CircuitPython on your Raspberry Pi Pico board.
+1. **Install thonny**: Install Thonny software.
 
 2. **Download Necessary Library Files**: Visit the CircuitPython website to download the necessary library files. Alternatively, you can obtain these files from the website and paste them into the "lib" folder on your board.
 
-3. **Copy Code Files**: Copy and paste the following files into your board:
-   - `code.py`
-   - `svm_min.py`
-
-4. **Copy `arial.bdf` File**: Copy the `arial.bdf` font file to your board. This file is essential for displaying text on the LCD screen.
-
-This step ensures that you have all the required files in place for running your project successfully.
+4. **Copy `servo.py` File**: Copy the servo.py file and paste it in the thonny ide.
 
 
 
@@ -77,7 +65,7 @@ Please note that you'll need to configure your IDE to work with your Raspberry P
 
 ## Raspberry Pi Pico Pin Diagram
 
-![Raspberry Pi Pico Pin Diagram](picow-pinout.svg)
+![Raspberry Pi Pico Pin Diagram](oip.jpg)
 
 ## Wiring
 
